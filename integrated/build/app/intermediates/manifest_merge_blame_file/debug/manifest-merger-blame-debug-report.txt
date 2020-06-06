@@ -1,0 +1,362 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.login_signup"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="28" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->C:\Users\Hacker\Downloads\integrated\android\app\src\main\AndroidManifest.xml:3:5-66
+14-->C:\Users\Hacker\Downloads\integrated\android\app\src\main\AndroidManifest.xml:3:22-64
+15    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+15-->C:\Users\Hacker\Downloads\integrated\android\app\src\main\AndroidManifest.xml:4:5-81
+15-->C:\Users\Hacker\Downloads\integrated\android\app\src\main\AndroidManifest.xml:4:22-78
+16    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+16-->C:\Users\Hacker\Downloads\integrated\android\app\src\main\AndroidManifest.xml:5:5-80
+16-->C:\Users\Hacker\Downloads\integrated\android\app\src\main\AndroidManifest.xml:5:22-77
+17    <uses-permission android:name="android.permission.CAMERA" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+17-->C:\Users\Hacker\Downloads\integrated\android\app\src\main\AndroidManifest.xml:6:5-65
+17-->C:\Users\Hacker\Downloads\integrated\android\app\src\main\AndroidManifest.xml:6:22-62
+18    <!-- <uses-sdk android:minSdkVersion="14" /> -->
+19    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+19-->[com.google.firebase:firebase-firestore:19.0.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\0627f7bda9a2379b201d985260961464\jetified-firebase-firestore-19.0.0\AndroidManifest.xml:13:5-79
+19-->[com.google.firebase:firebase-firestore:19.0.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\0627f7bda9a2379b201d985260961464\jetified-firebase-firestore-19.0.0\AndroidManifest.xml:13:22-76
+20    <uses-permission android:name="android.permission.WAKE_LOCK" />
+20-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\3592fecd1cee728cfe3542b45144d289\play-services-measurement-17.2.0\AndroidManifest.xml:25:5-68
+20-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\3592fecd1cee728cfe3542b45144d289\play-services-measurement-17.2.0\AndroidManifest.xml:25:22-65
+21    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+21-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\3592fecd1cee728cfe3542b45144d289\play-services-measurement-17.2.0\AndroidManifest.xml:26:5-110
+21-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\3592fecd1cee728cfe3542b45144d289\play-services-measurement-17.2.0\AndroidManifest.xml:26:22-107
+22
+23    <uses-feature
+23-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\a8b7ee5f247f646d994905e18a154113\play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+24        android:glEsVersion="0x00020000"
+24-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\a8b7ee5f247f646d994905e18a154113\play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+25        android:required="true" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+25-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\a8b7ee5f247f646d994905e18a154113\play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+26    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+26-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\8dd76bdce9dfd1a360da2cecb43043b3\firebase-iid-19.0.0\AndroidManifest.xml:26:5-82
+26-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\8dd76bdce9dfd1a360da2cecb43043b3\firebase-iid-19.0.0\AndroidManifest.xml:26:22-79
+27    <!--
+28 io.flutter.app.FlutterApplication is an android.app.Application that
+29         calls FlutterMain.startInitialization(this); in its onCreate method.
+30         In most cases you can leave this as-is, but you if you want to provide
+31         additional functionality it is fine to subclass or reimplement
+32         FlutterApplication and put your custom class here.
+33    -->
+34    <application
+34-->C:\Users\Hacker\Downloads\integrated\android\app\src\main\AndroidManifest.xml:13:5-36:19
+35        android:name="io.flutter.app.FlutterApplication"
+35-->C:\Users\Hacker\Downloads\integrated\android\app\src\main\AndroidManifest.xml:14:9-57
+36        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+36-->[androidx.core:core:1.0.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\f3417149ec8994a82b3880b0b7fc6149\core-1.0.0\AndroidManifest.xml:22:18-86
+37        android:debuggable="true"
+38        android:icon="@mipmap/ic_launcher"
+38-->C:\Users\Hacker\Downloads\integrated\android\app\src\main\AndroidManifest.xml:16:9-43
+39        android:label="login_signup" >
+39-->C:\Users\Hacker\Downloads\integrated\android\app\src\main\AndroidManifest.xml:15:9-37
+40        <activity
+40-->C:\Users\Hacker\Downloads\integrated\android\app\src\main\AndroidManifest.xml:17:9-35:20
+41            android:name="com.example.login_signup.MainActivity"
+41-->C:\Users\Hacker\Downloads\integrated\android\app\src\main\AndroidManifest.xml:18:13-41
+42            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+42-->C:\Users\Hacker\Downloads\integrated\android\app\src\main\AndroidManifest.xml:21:13-144
+43            android:hardwareAccelerated="true"
+43-->C:\Users\Hacker\Downloads\integrated\android\app\src\main\AndroidManifest.xml:22:13-47
+44            android:launchMode="singleTop"
+44-->C:\Users\Hacker\Downloads\integrated\android\app\src\main\AndroidManifest.xml:19:13-43
+45            android:theme="@style/LaunchTheme"
+45-->C:\Users\Hacker\Downloads\integrated\android\app\src\main\AndroidManifest.xml:20:13-47
+46            android:windowSoftInputMode="adjustResize" >
+46-->C:\Users\Hacker\Downloads\integrated\android\app\src\main\AndroidManifest.xml:23:13-55
+47
+48            <!--
+49                 This keeps the window background of the activity showing
+50                 until Flutter renders its first frame. It can be removed if
+51                 there is no splash screen (such as the default splash screen
+52                 defined in @style/LaunchTheme).
+53            -->
+54            <meta-data
+54-->C:\Users\Hacker\Downloads\integrated\android\app\src\main\AndroidManifest.xml:28:13-30:40
+55                android:name="io.flutter.app.android.SplashScreenUntilFirstFrame"
+55-->C:\Users\Hacker\Downloads\integrated\android\app\src\main\AndroidManifest.xml:29:17-82
+56                android:value="true" />
+56-->C:\Users\Hacker\Downloads\integrated\android\app\src\main\AndroidManifest.xml:30:17-37
+57
+58            <intent-filter>
+58-->C:\Users\Hacker\Downloads\integrated\android\app\src\main\AndroidManifest.xml:31:13-34:29
+59                <action android:name="android.intent.action.MAIN" />
+59-->C:\Users\Hacker\Downloads\integrated\android\app\src\main\AndroidManifest.xml:32:17-68
+59-->C:\Users\Hacker\Downloads\integrated\android\app\src\main\AndroidManifest.xml:32:25-66
+60
+61                <category android:name="android.intent.category.LAUNCHER" />
+61-->C:\Users\Hacker\Downloads\integrated\android\app\src\main\AndroidManifest.xml:33:17-76
+61-->C:\Users\Hacker\Downloads\integrated\android\app\src\main\AndroidManifest.xml:33:27-74
+62            </intent-filter>
+63        </activity>
+64
+65        <service
+65-->[:firebase_auth] C:\Users\Hacker\Downloads\integrated\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+66            android:name="com.google.firebase.components.ComponentDiscoveryService"
+66-->[:firebase_auth] C:\Users\Hacker\Downloads\integrated\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-89
+67            android:exported="false" >
+67-->[com.google.firebase:firebase-auth:18.0.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\1aef0bd6f9345d223b51c78b2e1243db\firebase-auth-18.0.0\AndroidManifest.xml:35:13-37
+68            <meta-data
+68-->[:firebase_auth] C:\Users\Hacker\Downloads\integrated\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+69                android:name="com.google.firebase.components:io.flutter.plugins.firebaseauth.FlutterFirebaseAppRegistrar"
+69-->[:firebase_auth] C:\Users\Hacker\Downloads\integrated\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-122
+70                android:value="com.google.firebase.components.ComponentRegistrar" />
+70-->[:firebase_auth] C:\Users\Hacker\Downloads\integrated\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+71            <meta-data
+71-->[:cloud_firestore] C:\Users\Hacker\Downloads\integrated\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+72                android:name="com.google.firebase.components:io.flutter.plugins.firebase.cloudfirestore.FlutterFirebaseAppRegistrar"
+72-->[:cloud_firestore] C:\Users\Hacker\Downloads\integrated\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-133
+73                android:value="com.google.firebase.components.ComponentRegistrar" />
+73-->[:cloud_firestore] C:\Users\Hacker\Downloads\integrated\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+74            <meta-data
+74-->[:firebase_core] C:\Users\Hacker\Downloads\integrated\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+75                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseAppRegistrar"
+75-->[:firebase_core] C:\Users\Hacker\Downloads\integrated\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-123
+76                android:value="com.google.firebase.components.ComponentRegistrar" />
+76-->[:firebase_core] C:\Users\Hacker\Downloads\integrated\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+77            <meta-data
+77-->[com.google.firebase:firebase-auth:18.0.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\1aef0bd6f9345d223b51c78b2e1243db\firebase-auth-18.0.0\AndroidManifest.xml:36:13-38:85
+78                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+78-->[com.google.firebase:firebase-auth:18.0.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\1aef0bd6f9345d223b51c78b2e1243db\firebase-auth-18.0.0\AndroidManifest.xml:37:17-109
+79                android:value="com.google.firebase.components.ComponentRegistrar" />
+79-->[com.google.firebase:firebase-auth:18.0.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\1aef0bd6f9345d223b51c78b2e1243db\firebase-auth-18.0.0\AndroidManifest.xml:38:17-82
+80            <meta-data
+80-->[com.google.firebase:firebase-firestore:19.0.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\0627f7bda9a2379b201d985260961464\jetified-firebase-firestore-19.0.0\AndroidManifest.xml:18:13-20:85
+81                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+81-->[com.google.firebase:firebase-firestore:19.0.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\0627f7bda9a2379b201d985260961464\jetified-firebase-firestore-19.0.0\AndroidManifest.xml:19:17-111
+82                android:value="com.google.firebase.components.ComponentRegistrar" />
+82-->[com.google.firebase:firebase-firestore:19.0.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\0627f7bda9a2379b201d985260961464\jetified-firebase-firestore-19.0.0\AndroidManifest.xml:20:17-82
+83            <meta-data
+83-->[com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\5973fbc4e03ef764bd9bb3ba9a95c458\play-services-measurement-api-17.2.0\AndroidManifest.xml:30:13-32:85
+84                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+84-->[com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\5973fbc4e03ef764bd9bb3ba9a95c458\play-services-measurement-api-17.2.0\AndroidManifest.xml:31:17-139
+85                android:value="com.google.firebase.components.ComponentRegistrar" />
+85-->[com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\5973fbc4e03ef764bd9bb3ba9a95c458\play-services-measurement-api-17.2.0\AndroidManifest.xml:32:17-82
+86            <meta-data
+86-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\8dd76bdce9dfd1a360da2cecb43043b3\firebase-iid-19.0.0\AndroidManifest.xml:32:13-34:85
+87                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+87-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\8dd76bdce9dfd1a360da2cecb43043b3\firebase-iid-19.0.0\AndroidManifest.xml:33:17-96
+88                android:value="com.google.firebase.components.ComponentRegistrar" />
+88-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\8dd76bdce9dfd1a360da2cecb43043b3\firebase-iid-19.0.0\AndroidManifest.xml:34:17-82
+89        </service>
+90
+91        <activity
+91-->[com.google.firebase:firebase-auth:18.0.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\1aef0bd6f9345d223b51c78b2e1243db\firebase-auth-18.0.0\AndroidManifest.xml:24:9-31:50
+92            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+92-->[com.google.firebase:firebase-auth:18.0.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\1aef0bd6f9345d223b51c78b2e1243db\firebase-auth-18.0.0\AndroidManifest.xml:25:13-85
+93            android:excludeFromRecents="true"
+93-->[com.google.firebase:firebase-auth:18.0.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\1aef0bd6f9345d223b51c78b2e1243db\firebase-auth-18.0.0\AndroidManifest.xml:26:13-46
+94            android:exported="true"
+94-->[com.google.firebase:firebase-auth:18.0.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\1aef0bd6f9345d223b51c78b2e1243db\firebase-auth-18.0.0\AndroidManifest.xml:27:13-36
+95            android:launchMode="singleTask"
+95-->[com.google.firebase:firebase-auth:18.0.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\1aef0bd6f9345d223b51c78b2e1243db\firebase-auth-18.0.0\AndroidManifest.xml:28:13-44
+96            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+96-->[com.google.firebase:firebase-auth:18.0.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\1aef0bd6f9345d223b51c78b2e1243db\firebase-auth-18.0.0\AndroidManifest.xml:29:13-102
+97            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+97-->[com.google.firebase:firebase-auth:18.0.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\1aef0bd6f9345d223b51c78b2e1243db\firebase-auth-18.0.0\AndroidManifest.xml:30:13-72
+98        <activity
+98-->[com.squareup.sdk.in-app-payments:buyer-verification:1.3.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\c25415de65f55280be88b22ff6272010\jetified-buyer-verification-1.3.0\AndroidManifest.xml:10:9-13:58
+99            android:name="sqip.internal.verification.BuyerVerificationActivity"
+99-->[com.squareup.sdk.in-app-payments:buyer-verification:1.3.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\c25415de65f55280be88b22ff6272010\jetified-buyer-verification-1.3.0\AndroidManifest.xml:11:13-80
+100            android:theme="@style/sqip.Theme.BuyerVerification_Loading"
+100-->[com.squareup.sdk.in-app-payments:buyer-verification:1.3.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\c25415de65f55280be88b22ff6272010\jetified-buyer-verification-1.3.0\AndroidManifest.xml:12:13-72
+101            android:windowSoftInputMode="adjustResize" />
+101-->[com.squareup.sdk.in-app-payments:buyer-verification:1.3.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\c25415de65f55280be88b22ff6272010\jetified-buyer-verification-1.3.0\AndroidManifest.xml:13:13-55
+102        <activity
+102-->[com.nds.threeds:threedssdk-release:1.1.17] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\821c0006dd72aee44f57d5067e110029\jetified-threedssdk-release-1.1.17\AndroidManifest.xml:11:9-14:58
+103            android:name="com.ndsthreeds.android.sdk.ChallengeFlowActivity"
+103-->[com.nds.threeds:threedssdk-release:1.1.17] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\821c0006dd72aee44f57d5067e110029\jetified-threedssdk-release-1.1.17\AndroidManifest.xml:12:13-76
+104            android:configChanges="orientation|screenSize"
+104-->[com.nds.threeds:threedssdk-release:1.1.17] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\821c0006dd72aee44f57d5067e110029\jetified-threedssdk-release-1.1.17\AndroidManifest.xml:13:13-59
+105            android:windowSoftInputMode="adjustResize" />
+105-->[com.nds.threeds:threedssdk-release:1.1.17] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\821c0006dd72aee44f57d5067e110029\jetified-threedssdk-release-1.1.17\AndroidManifest.xml:14:13-55
+106
+107        <receiver
+107-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\3592fecd1cee728cfe3542b45144d289\play-services-measurement-17.2.0\AndroidManifest.xml:29:9-33:20
+108            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+108-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\3592fecd1cee728cfe3542b45144d289\play-services-measurement-17.2.0\AndroidManifest.xml:30:13-85
+109            android:enabled="true"
+109-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\3592fecd1cee728cfe3542b45144d289\play-services-measurement-17.2.0\AndroidManifest.xml:31:13-35
+110            android:exported="false" >
+110-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\3592fecd1cee728cfe3542b45144d289\play-services-measurement-17.2.0\AndroidManifest.xml:32:13-37
+111        </receiver>
+112        <receiver
+112-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\3592fecd1cee728cfe3542b45144d289\play-services-measurement-17.2.0\AndroidManifest.xml:34:9-42:20
+113            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+113-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\3592fecd1cee728cfe3542b45144d289\play-services-measurement-17.2.0\AndroidManifest.xml:35:13-100
+114            android:enabled="true"
+114-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\3592fecd1cee728cfe3542b45144d289\play-services-measurement-17.2.0\AndroidManifest.xml:36:13-35
+115            android:exported="true"
+115-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\3592fecd1cee728cfe3542b45144d289\play-services-measurement-17.2.0\AndroidManifest.xml:37:13-36
+116            android:permission="android.permission.INSTALL_PACKAGES" >
+116-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\3592fecd1cee728cfe3542b45144d289\play-services-measurement-17.2.0\AndroidManifest.xml:38:13-69
+117            <intent-filter>
+117-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\3592fecd1cee728cfe3542b45144d289\play-services-measurement-17.2.0\AndroidManifest.xml:39:13-41:29
+118                <action android:name="com.android.vending.INSTALL_REFERRER" />
+118-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\3592fecd1cee728cfe3542b45144d289\play-services-measurement-17.2.0\AndroidManifest.xml:40:17-79
+118-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\3592fecd1cee728cfe3542b45144d289\play-services-measurement-17.2.0\AndroidManifest.xml:40:25-76
+119            </intent-filter>
+120        </receiver>
+121
+122        <service
+122-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\3592fecd1cee728cfe3542b45144d289\play-services-measurement-17.2.0\AndroidManifest.xml:44:9-47:40
+123            android:name="com.google.android.gms.measurement.AppMeasurementService"
+123-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\3592fecd1cee728cfe3542b45144d289\play-services-measurement-17.2.0\AndroidManifest.xml:45:13-84
+124            android:enabled="true"
+124-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\3592fecd1cee728cfe3542b45144d289\play-services-measurement-17.2.0\AndroidManifest.xml:46:13-35
+125            android:exported="false" />
+125-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\3592fecd1cee728cfe3542b45144d289\play-services-measurement-17.2.0\AndroidManifest.xml:47:13-37
+126        <service
+126-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\3592fecd1cee728cfe3542b45144d289\play-services-measurement-17.2.0\AndroidManifest.xml:48:9-52:72
+127            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+127-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\3592fecd1cee728cfe3542b45144d289\play-services-measurement-17.2.0\AndroidManifest.xml:49:13-87
+128            android:enabled="true"
+128-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\3592fecd1cee728cfe3542b45144d289\play-services-measurement-17.2.0\AndroidManifest.xml:50:13-35
+129            android:exported="false"
+129-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\3592fecd1cee728cfe3542b45144d289\play-services-measurement-17.2.0\AndroidManifest.xml:51:13-37
+130            android:permission="android.permission.BIND_JOB_SERVICE" />
+130-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\3592fecd1cee728cfe3542b45144d289\play-services-measurement-17.2.0\AndroidManifest.xml:52:13-69
+131
+132        <activity
+132-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\1a065e8d1679cb0b20e64f12a5609e27\jetified-play-services-auth-16.0.1\AndroidManifest.xml:23:9-27:75
+133            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+133-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\1a065e8d1679cb0b20e64f12a5609e27\jetified-play-services-auth-16.0.1\AndroidManifest.xml:24:13-93
+134            android:excludeFromRecents="true"
+134-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\1a065e8d1679cb0b20e64f12a5609e27\jetified-play-services-auth-16.0.1\AndroidManifest.xml:25:13-46
+135            android:exported="false"
+135-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\1a065e8d1679cb0b20e64f12a5609e27\jetified-play-services-auth-16.0.1\AndroidManifest.xml:26:13-37
+136            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+136-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\1a065e8d1679cb0b20e64f12a5609e27\jetified-play-services-auth-16.0.1\AndroidManifest.xml:27:13-72
+137        <!--
+138            Service handling Google Sign-In user revocation. For apps that do not integrate with
+139            Google Sign-In, this service will never be started.
+140        -->
+141        <service
+141-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\1a065e8d1679cb0b20e64f12a5609e27\jetified-play-services-auth-16.0.1\AndroidManifest.xml:33:9-36:110
+142            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+142-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\1a065e8d1679cb0b20e64f12a5609e27\jetified-play-services-auth-16.0.1\AndroidManifest.xml:34:13-89
+143            android:exported="true"
+143-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\1a065e8d1679cb0b20e64f12a5609e27\jetified-play-services-auth-16.0.1\AndroidManifest.xml:35:13-36
+144            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" /> <!-- Needs to be explicitly declared on P+ -->
+144-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\1a065e8d1679cb0b20e64f12a5609e27\jetified-play-services-auth-16.0.1\AndroidManifest.xml:36:13-107
+145        <uses-library
+145-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\a8b7ee5f247f646d994905e18a154113\play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+146            android:name="org.apache.http.legacy"
+146-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\a8b7ee5f247f646d994905e18a154113\play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+147            android:required="false" />
+147-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\a8b7ee5f247f646d994905e18a154113\play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+148
+149        <receiver
+149-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\8dd76bdce9dfd1a360da2cecb43043b3\firebase-iid-19.0.0\AndroidManifest.xml:37:9-44:20
+150            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+150-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\8dd76bdce9dfd1a360da2cecb43043b3\firebase-iid-19.0.0\AndroidManifest.xml:38:13-78
+151            android:exported="true"
+151-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\8dd76bdce9dfd1a360da2cecb43043b3\firebase-iid-19.0.0\AndroidManifest.xml:39:13-36
+152            android:permission="com.google.android.c2dm.permission.SEND" >
+152-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\8dd76bdce9dfd1a360da2cecb43043b3\firebase-iid-19.0.0\AndroidManifest.xml:40:13-73
+153            <intent-filter>
+153-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\8dd76bdce9dfd1a360da2cecb43043b3\firebase-iid-19.0.0\AndroidManifest.xml:41:13-43:29
+154                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+154-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\8dd76bdce9dfd1a360da2cecb43043b3\firebase-iid-19.0.0\AndroidManifest.xml:42:17-81
+154-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\8dd76bdce9dfd1a360da2cecb43043b3\firebase-iid-19.0.0\AndroidManifest.xml:42:25-78
+155            </intent-filter>
+156        </receiver>
+157
+158        <activity
+158-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\64aa804a65a9e3423a6cc11b33d51f06\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+159            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+159-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\64aa804a65a9e3423a6cc11b33d51f06\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+160            android:exported="false"
+160-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\64aa804a65a9e3423a6cc11b33d51f06\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+161            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+161-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\64aa804a65a9e3423a6cc11b33d51f06\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+162
+163        <provider
+163-->[com.google.firebase:firebase-common:19.0.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\49e26a9cfd21dbd4d7e032e6162173bc\firebase-common-19.0.0\AndroidManifest.xml:12:9-16:39
+164            android:name="com.google.firebase.provider.FirebaseInitProvider"
+164-->[com.google.firebase:firebase-common:19.0.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\49e26a9cfd21dbd4d7e032e6162173bc\firebase-common-19.0.0\AndroidManifest.xml:13:13-77
+165            android:authorities="com.example.login_signup.firebaseinitprovider"
+165-->[com.google.firebase:firebase-common:19.0.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\49e26a9cfd21dbd4d7e032e6162173bc\firebase-common-19.0.0\AndroidManifest.xml:14:13-72
+166            android:exported="false"
+166-->[com.google.firebase:firebase-common:19.0.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\49e26a9cfd21dbd4d7e032e6162173bc\firebase-common-19.0.0\AndroidManifest.xml:15:13-37
+167            android:initOrder="100" />
+167-->[com.google.firebase:firebase-common:19.0.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\49e26a9cfd21dbd4d7e032e6162173bc\firebase-common-19.0.0\AndroidManifest.xml:16:13-36
+168
+169        <meta-data
+169-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\221933a4f75ec98a601a8644a4d2cbfb\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+170            android:name="com.google.android.gms.version"
+170-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\221933a4f75ec98a601a8644a4d2cbfb\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+171            android:value="@integer/google_play_services_version" />
+171-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\221933a4f75ec98a601a8644a4d2cbfb\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+172
+173        <activity
+173-->[com.squareup.sdk.in-app-payments:card-entry:1.3.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\a5d5af2d08442dc436eea588af5b5d95\jetified-card-entry-1.3.0\AndroidManifest.xml:10:9-14:20
+174            android:name="sqip.internal.CardEntryActivity"
+174-->[com.squareup.sdk.in-app-payments:card-entry:1.3.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\a5d5af2d08442dc436eea588af5b5d95\jetified-card-entry-1.3.0\AndroidManifest.xml:11:13-59
+175            android:theme="@style/sqip.Theme.CardEntry"
+175-->[com.squareup.sdk.in-app-payments:card-entry:1.3.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\a5d5af2d08442dc436eea588af5b5d95\jetified-card-entry-1.3.0\AndroidManifest.xml:12:13-56
+176            android:windowSoftInputMode="adjustResize" >
+176-->[com.squareup.sdk.in-app-payments:card-entry:1.3.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\a5d5af2d08442dc436eea588af5b5d95\jetified-card-entry-1.3.0\AndroidManifest.xml:13:13-55
+177        </activity>
+178
+179        <provider
+179-->[com.sangcomz:FishBun:0.11.1] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\2bfdd359f9d6a9ff56df8fc6d8eadc58\jetified-FishBun-0.11.1\AndroidManifest.xml:12:9-20:20
+180            android:name="com.sangcomz.fishbun.FishBunFileProvider"
+180-->[com.sangcomz:FishBun:0.11.1] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\2bfdd359f9d6a9ff56df8fc6d8eadc58\jetified-FishBun-0.11.1\AndroidManifest.xml:13:13-68
+181            android:authorities="com.example.login_signup.fishbunfileprovider"
+181-->[com.sangcomz:FishBun:0.11.1] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\2bfdd359f9d6a9ff56df8fc6d8eadc58\jetified-FishBun-0.11.1\AndroidManifest.xml:14:13-71
+182            android:exported="false"
+182-->[com.sangcomz:FishBun:0.11.1] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\2bfdd359f9d6a9ff56df8fc6d8eadc58\jetified-FishBun-0.11.1\AndroidManifest.xml:15:13-37
+183            android:grantUriPermissions="true" >
+183-->[com.sangcomz:FishBun:0.11.1] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\2bfdd359f9d6a9ff56df8fc6d8eadc58\jetified-FishBun-0.11.1\AndroidManifest.xml:16:13-47
+184            <meta-data
+184-->[com.sangcomz:FishBun:0.11.1] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\2bfdd359f9d6a9ff56df8fc6d8eadc58\jetified-FishBun-0.11.1\AndroidManifest.xml:17:13-19:58
+185                android:name="android.support.FILE_PROVIDER_PATHS"
+185-->[com.sangcomz:FishBun:0.11.1] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\2bfdd359f9d6a9ff56df8fc6d8eadc58\jetified-FishBun-0.11.1\AndroidManifest.xml:18:17-67
+186                android:resource="@xml/provider_paths" />
+186-->[com.sangcomz:FishBun:0.11.1] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\2bfdd359f9d6a9ff56df8fc6d8eadc58\jetified-FishBun-0.11.1\AndroidManifest.xml:19:17-55
+187        </provider>
+188
+189        <activity
+189-->[com.sangcomz:FishBun:0.11.1] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\2bfdd359f9d6a9ff56df8fc6d8eadc58\jetified-FishBun-0.11.1\AndroidManifest.xml:22:9-25:51
+190            android:name="com.sangcomz.fishbun.ui.album.AlbumActivity"
+190-->[com.sangcomz:FishBun:0.11.1] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\2bfdd359f9d6a9ff56df8fc6d8eadc58\jetified-FishBun-0.11.1\AndroidManifest.xml:23:13-71
+191            android:label="@string/album"
+191-->[com.sangcomz:FishBun:0.11.1] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\2bfdd359f9d6a9ff56df8fc6d8eadc58\jetified-FishBun-0.11.1\AndroidManifest.xml:24:13-42
+192            android:theme="@style/FishBunTheme" />
+192-->[com.sangcomz:FishBun:0.11.1] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\2bfdd359f9d6a9ff56df8fc6d8eadc58\jetified-FishBun-0.11.1\AndroidManifest.xml:25:13-48
+193        <activity
+193-->[com.sangcomz:FishBun:0.11.1] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\2bfdd359f9d6a9ff56df8fc6d8eadc58\jetified-FishBun-0.11.1\AndroidManifest.xml:26:9-28:51
+194            android:name="com.sangcomz.fishbun.ui.picker.PickerActivity"
+194-->[com.sangcomz:FishBun:0.11.1] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\2bfdd359f9d6a9ff56df8fc6d8eadc58\jetified-FishBun-0.11.1\AndroidManifest.xml:27:13-73
+195            android:theme="@style/FishBunTheme" />
+195-->[com.sangcomz:FishBun:0.11.1] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\2bfdd359f9d6a9ff56df8fc6d8eadc58\jetified-FishBun-0.11.1\AndroidManifest.xml:28:13-48
+196        <activity
+196-->[com.sangcomz:FishBun:0.11.1] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\2bfdd359f9d6a9ff56df8fc6d8eadc58\jetified-FishBun-0.11.1\AndroidManifest.xml:29:9-31:54
+197            android:name="com.sangcomz.fishbun.ui.detail.DetailActivity"
+197-->[com.sangcomz:FishBun:0.11.1] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\2bfdd359f9d6a9ff56df8fc6d8eadc58\jetified-FishBun-0.11.1\AndroidManifest.xml:30:13-73
+198            android:theme="@style/DetailViewTheme" />
+198-->[com.sangcomz:FishBun:0.11.1] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\2bfdd359f9d6a9ff56df8fc6d8eadc58\jetified-FishBun-0.11.1\AndroidManifest.xml:31:13-51
+199
+200        <provider
+200-->[com.squareup.sdk.in-app-payments:nonce-api:1.3.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\70e7ba990741eaf58665fa05b2cfc744\nonce-api-1.3.0\AndroidManifest.xml:10:9-13:40
+201            android:name="sqip.internal.ContextCaptureContentProvider"
+201-->[com.squareup.sdk.in-app-payments:nonce-api:1.3.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\70e7ba990741eaf58665fa05b2cfc744\nonce-api-1.3.0\AndroidManifest.xml:11:13-71
+202            android:authorities="com.example.login_signup.sqip"
+202-->[com.squareup.sdk.in-app-payments:nonce-api:1.3.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\70e7ba990741eaf58665fa05b2cfc744\nonce-api-1.3.0\AndroidManifest.xml:12:13-56
+203            android:exported="false" />
+203-->[com.squareup.sdk.in-app-payments:nonce-api:1.3.0] C:\Users\Hacker\.gradle\caches\transforms-2\files-2.1\70e7ba990741eaf58665fa05b2cfc744\nonce-api-1.3.0\AndroidManifest.xml:13:13-37
+204    </application>
+205
+206</manifest>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">298450054636-6t07j2qlsbf1bo6vqegudah2139gmpnl.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://loginsignup-74356.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">298450054636</string>
+    <string name="google_api_key" translatable="false">AIzaSyDeHZoV3rl5E-TrZFnPuveHLPds7g5k2m4</string>
+    <string name="google_app_id" translatable="false">1:298450054636:android:3fdc924ce49963ec69e4c9</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDeHZoV3rl5E-TrZFnPuveHLPds7g5k2m4</string>
+    <string name="google_storage_bucket" translatable="false">loginsignup-74356.appspot.com</string>
+    <string name="project_id" translatable="false">loginsignup-74356</string>
+</resources>
